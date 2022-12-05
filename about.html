@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+   <head>
+      <!-- Styles -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+      <link href="vendor/animate/animate.css" rel="stylesheet" type="text/css"/>
+      <link href="css/style.css" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <div class="navigation container-fluid">
+         <div class="row justify-content-md-center ">
+            <div class="col-md-10 col-sm-12">
+               <nav class="navbar navbar-default">
+                  <a class="navbar-brand" href="index.html">
+                     <img src="img/logo-hitam.png" height="30" alt="Logo">
+                  </a>
+                  <div class="button_container" id="toggle">
+                     <span class="black top"></span>
+                     <span class="black middle"></span>
+                     <span class="black bottom"></span>
+                  </div>
+                  <div class="overlay" id="overlay">
+                     <nav class="overlay-menu">
+                        <ul>
+                           <li> <a href="about.html">About</a></li>
+                           <li> <a href="story.html">Story</a></li>
+                           <li> <a href="gallery.html">Gallery</a></li>
+                           <li> <a href="contacts.html">Contacts</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid products-2">
+         <div class="row justify-content-md-center ">
+            <div class="col-md-10 col-sm-12">
+               <div class="row">
+                  <div class="col-xl-8 col-md-10 col-sm-12">
+                     <p>Kami sudah membuat agenda kami selanjutnya yang akan kami laksanakan pada : 
+                       <p id="demo"></p>
+                       <script> 
+                       var countDownDate = new Date("Dec 20, 2022 00:00:00").getTime();
+                       var x = setInterval(function() {
+                          var now = new Date().getTime();
+                          var distance = countDownDate - now;
+                          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                          document.getElementById("demo").innerHTML = days + "d " + hours + "h " 
+                          + minutes + "m " + seconds + "s ";
+                          if (distance < 0) {
+                             clearInterval(x);
+                             document.getElementById("demo").innerHTML = "EXPIRED";
+                           }
+                            }, 1000);
+                            </script>
+                        <br><br>
+                        Kami sudah membuat rencana yaitu membuka siapa saja yang tertarik untuk mengikuti kegiatan
+                        yang kami selenggarakan. Tujuan kami selanjutnya adalah ke situs wisata pantai GILI TRAWANGAN yang 
+                        berada di Kepulauan Gili, Nusa Tenggara Barat.
+                        <br><br>
+                        Dengan membayar sejumlah Rp.10.000.000, kalian sudah mendapatkan fasilitas lengkap berupa
+                        Tiket PP Pesawat Jakarta - Lombok, Penginapan (2 hari 2 malam), Makan 3x sehari,
+                        Kendaraan untuk jalan-jalan di tempat wisata (Motor roda 2).
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End Products -->
+      <!-- Additional -->
+      <div class="container additional">
+         <div class="row">
+            <div class="col-xl-4">
+               <img src="img/gili1.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-xl-4">
+               <img src="img/gili2.jpg" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-xl-4">
+               <img src="img/gili3.jpg" class="img-fluid" alt="Image">
+            </div>
+         </div>
+      </div>
+      <!-- End Additional -->
+      <!-- Footer -->
+      <div class="container-fluid footer ">
+         <div class="row">
+            <div class="col-xl-2 col-md-8 offset-md-1 col-sm-12 ">
+               <p>
+                  <a href="about.html">About</a><br>
+                  <a href="story.html">Story</a><br>
+                  <a href="gallery.html">Gallery</a><br>
+                  <a href="contacts.html">Contacts</a><br>
+               </p>
+            </div>
+            <div class="col-xl-2 col-md-8 offset-md-1 col-sm-12 ">
+               <p>
+                  MARKAS BESAR<br>
+                  Jl. Parakan<br>
+                  15416 - Tangerang Selatan<br>
+                  TEL. +62 21-666-666
+               </p>
+            </div>
+            <div class="col-xl-2 col-md-8 offset-md-1 col-sm-12">
+               <img src="img/logo-hitam.png" height="30" alt="Logo">
+            </div>
+         </div>
+      </div>
+      <!-- End Footer -->
+      <!-- Javascript -->
+      <script src="vendor/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendor/wow/wow.js"></script>
+      <script src="js/script.js"></script>
+      <script>
+         new WOW().init();
+      </script>
+      <!-- End Javascript -->
+   </body>
+</html>
